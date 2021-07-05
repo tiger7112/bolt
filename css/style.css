@@ -3,7 +3,7 @@
 /* header部分 */
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .inner {
@@ -62,6 +62,7 @@ body {
   font-size: 90px;
   font-weight: 700;
   color: #74cfae;
+  font-family: 'Raleway', sans-serif;
 }
 
 .theme__content__sub_title {
@@ -79,25 +80,24 @@ body {
   padding: 50px 0;
 }
 
-.section__content {
-  width: 60%;
-}
-
 .section__content-img {
   width: 150px;
   height: 230px;
   float: left;
+  margin-left: 50px;
 }
 
 .section__content-text {
   text-align: center;
   color: #FFF;
-  margin-left: 350px;
   line-height: 25px;
+  display: inline-block;
+  width: 700px;
 }
 
 .section-title {
   font-size: 24px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .section-text {
@@ -116,6 +116,7 @@ body {
 
 .article__content__title {
   font-size: 24px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .article__content__img {
@@ -126,14 +127,10 @@ body {
 
 .article__content__img li {
   margin-left: 100px;
-}
-
-
-.article__content__img li img {
   opacity: 0.7;
   transition: 0.3s;
   cursor: pointer;
-  margin-bottom: 80px;
+  margin-top: 80px;
 }
 
 .article__content__img li:first-child {
@@ -144,19 +141,26 @@ body {
   margin-left: 0;
 }
 
-.article__content__img li img:hover {
+.article__content__img li:nth-child(-n+3) {
+  margin-top: 0;
+}
+
+.article__content__img li:hover {
   opacity: 1;
 }
 
 .article__content__email {
   text-align: center;
+  margin: 0 auto;
+  width: 62%;
+  margin-top: 90px;
 }
 
 .article__content__text {
-  margin:0 90px 10px 250px;
-  width: 540px;
-  float: left;
   line-height: 25px;
+  float: left;
+  width: 75%;
+  margin-right: 90px;
 }
 
 .email-btn {
@@ -167,7 +171,7 @@ body {
   transition: 0.3s;
   text-decoration: none;
   cursor: pointer;
-  float: left;
+  float: right;
 }
 
 .email-btn:hover {
@@ -184,23 +188,29 @@ body {
 
 .ourSkills__content__title {
   color: #FFF;
+  font-family: 'Raleway', sans-serif;
 }
 
 .ourSkills__content__img {
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
+  justify-content: center;
 }
 
 .ourSkills__content__box {
-  margin: 0 auto;
+  margin-left: 180px;
 }
+
+.ourSkills__content__box:first-child {
+  margin-left: 0;
+}
+
 
 .ourSkills__content__img p{
   color: #FFF;
   font-size: 16px;
   margin-top: 10px;
-  font-family: 'Lato', sans-serif;
 }
 
 /* sns部分 */
@@ -212,8 +222,9 @@ body {
 }
 
 .sns__content {
-  line-height: 0;
-  font-size: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .fa-fw {
@@ -241,8 +252,11 @@ body {
 
 .footer__text {
   color: #FFF;
-  padding-right: 200px;
   font-family: 'Lato', sans-serif;
+}
+
+.footer__text p {
+  text-align: right;
 }
 
 
