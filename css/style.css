@@ -2,33 +2,40 @@
 
 /* header部分 */
 
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
 .inner {
   width: 1100px;
   margin: 0 auto;
   text-align: center;
 }
 
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .header {
   width: 100%;
+  height: auto;
   position: fixed;
-  top: 0;
-  left: 0;
   background-color: #FFF;
-  line-height: 0;
   z-index: 1;
-  padding: 20px 0;
+  padding: 15px 0;
 }
 
 .fa-bolt {
   display: block;
-  text-align: left;
   float: left;
 }
 
 .contact-btn {
   float: right;
   font-size: 12px;
-  padding: 18px 12px;
+  padding: 14px 12px;
   background-color: #74cfae;
   color: #FFF;
   transition: 0.3s;
@@ -37,6 +44,10 @@
 
 .contact-btn:hover {
   color: #333;
+}
+
+.main {
+  padding-top: 70px;
 }
 
 /* theme部分 */
@@ -69,7 +80,7 @@
 }
 
 .section__content {
-    width: 60%;
+  width: 60%;
 }
 
 .section__content-img {
@@ -82,6 +93,7 @@
   text-align: center;
   color: #FFF;
   margin-left: 350px;
+  line-height: 25px;
 }
 
 .section-title {
@@ -104,24 +116,32 @@
 
 .article__content__title {
   font-size: 24px;
-  margin-bottom: 40px;
 }
 
 .article__content__img {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin-top: 40px;
 }
 
 .article__content__img li {
-  margin: 0 auto;
+  margin-left: 100px;
 }
 
+
 .article__content__img li img {
-  margin-bottom: 80px;
   opacity: 0.7;
   transition: 0.3s;
   cursor: pointer;
+  margin-bottom: 80px;
+}
+
+.article__content__img li:first-child {
+  margin-left: 0;
+}
+
+.article__content__img li:nth-child(4) {
+  margin-left: 0;
 }
 
 .article__content__img li img:hover {
@@ -129,14 +149,14 @@
 }
 
 .article__content__email {
-  width: 70%; 
-  margin: 0 auto;
+  text-align: center;
 }
 
 .article__content__text {
-  padding: 0 90px 10px 0;
+  margin:0 90px 10px 250px;
   width: 540px;
   float: left;
+  line-height: 25px;
 }
 
 .email-btn {
@@ -147,16 +167,11 @@
   transition: 0.3s;
   text-decoration: none;
   cursor: pointer;
+  float: left;
 }
 
 .email-btn:hover {
   color: #333;
-}
-
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
 }
 
 /* OURSKILLS部分 */
@@ -164,17 +179,17 @@
 .ourSkills {
   width: 100%;
   background-color: #4e4e4e;
-  padding: 70px 0;
+  padding: 70px 0 100px 0;
 }
 
 .ourSkills__content__title {
   color: #FFF;
-  margin-bottom: 50px;
 }
 
 .ourSkills__content__img {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 50px;
 }
 
 .ourSkills__content__box {
@@ -185,7 +200,7 @@
   color: #FFF;
   font-size: 16px;
   margin-top: 10px;
-  margin-bottom: 100px;
+  font-family: 'Lato', sans-serif;
 }
 
 /* sns部分 */
@@ -220,13 +235,16 @@
 .footer {
   width: 100%;
   background-color: #74cfae;
-  padding: 20px 0;
+  padding: 20px 0 25px 0;
   text-align: right;
 }
 
 .footer__text {
   color: #FFF;
+  padding-right: 200px;
+  font-family: 'Lato', sans-serif;
 }
+
 
 /* スマフォ */
 @media screen and (max-width:767px) {
@@ -484,7 +502,6 @@
   .article__content__img li img {
     margin: 0 auto;
     display: block;
-    width: 100%;
   }
 
   .article__content__img li:nth-child(3) {
@@ -492,73 +509,28 @@
   }
 
   .article__content__email {
-    padding: 80px 0 70px 0;
+    padding: 80px 0 10px 0;
+    width: 100%;
   }
 
   .article__content__text {
     float: none;
     width: 100%;
-  }
+    margin-bottom: 40px;
 
-  .email-btn {
-    font-size: 12px;
-    background-color: #74cfae;
-    color: #FFF;
-    transition: 0.3s;
-    text-decoration: none;
-  }
-
-  .ourSkills {
-    width: 100%;
-  }
-
-  .ourSkills__content__title {
-    color: #FFF;
-    padding: 70px 0 50px 0;
   }
 
   .ourSkills__content__img {
     margin: 0 auto;
-    padding-bottom: 100px;
     display: block;
   }
 
-  .ourSkills__content__img img{
-    padding: 0;
-  }
-
-  .ourSkills__content__img p {
-    padding: 0;
-    padding-top: 20px;
-  }
-
   .ourSkills__content__box {
-    padding-bottom: 88px;
+    margin-bottom: 88px;
   }
 
-  .sns {
-    width: 100%;
-    background-color: #f2f2f2;
+  .ourSkills__content__box:nth-child(4) {
+    margin-bottom: auto;
   }
 
-  .sns__content {
-    padding: 200px 0px;
-    width: 100%;
-  }
-
-  .fa-fw {
-    margin: auto;
-    padding: 30px 0;
-    transition: 0.3s;
-  }
-
-  .fa-fw:hover {
-    background-color: #FFF;
-  }
-
-  .footer__text {
-    padding: 20px 15px 25px 0;
-    white-space: nowrap;
-    text-align: right;
-  }
 }
