@@ -111,7 +111,7 @@ body {
 .article {
   width: 100%;
   background-color: #f2f2f2;
-  padding: 60px 0;
+  padding: 60px 0 70px 0;
 }
 
 .article__content__title {
