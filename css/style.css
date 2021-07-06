@@ -152,15 +152,16 @@ body {
 .article__content__email {
   text-align: center;
   margin: 0 auto;
-  width: 62%;
+  /* width: 62%; */
   margin-top: 90px;
 }
 
 .article__content__text {
   line-height: 25px;
   float: left;
-  width: 75%;
+  width: 50%;
   margin-right: 90px;
+  margin-left: 170px;
 }
 
 .email-btn {
@@ -172,6 +173,7 @@ body {
   text-decoration: none;
   cursor: pointer;
   float: right;
+  margin-right: 197px;
 }
 
 .email-btn:hover {
