@@ -378,9 +378,13 @@ img {
     padding: 50px 0px;
   }
 
+  .sns__content {
+    align-items: center;
+    flex-direction: column;
+  }
+
   .sns__content__icon {
-    padding: 30px 79px;
-    margin: 0 15px;
+    padding: 30px 40px;
   }
 }
 
