@@ -274,7 +274,7 @@ img {
   .hamburger {
     position: relative;
     cursor: pointer;
-    right: 50px;
+    right: 10px;
     height: 45px;
     width: 60px;
     border: 1px solid #ddd;
@@ -287,8 +287,8 @@ img {
     left: 15px;
     width: 30px;
     height: 3px;
-    background-color: #74cfae;
-    border-radius: 8px;
+    background-color: #ddd;
+    border-radius: 4px;
     transition: ease 0.75s;
   }
     
