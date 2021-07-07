@@ -332,6 +332,11 @@ img {
     margin-top: 20px;
   }
 
+  .section-text {
+    margin-left: -17%;
+    margin-right: -19%;
+  }
+
   .article__content__img {
     margin: 40px 0 0 9%;
   }
