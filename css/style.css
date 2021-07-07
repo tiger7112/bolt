@@ -40,6 +40,10 @@ img {
   color: #333;
 }
 
+.hamburger {
+  display: none;
+}
+
 .header {
   width: 100%;
   position: fixed;
@@ -155,7 +159,6 @@ img {
 .article__content__email {
   text-align: center;
   margin-top: 90px;
-  display: inline-block;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -249,16 +252,83 @@ img {
   text-align: right;
 }
 
+/* タブレット */
+
+@media screen and (max-width:1199px) {
+  
+  .inner {
+    width: 97%;
+    margin: 0 auto;
+  }
+
+  .header {
+    display: inline-block;
+    justify-content: space-around;
+    box-sizing: border-box;
+  }
+
+  .section {
+    padding-bottom: 25px;
+  }
+
+  .section__content-img {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .section__content-text {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .article__content__img {
+    margin: 40px auto 0;
+    display: table;
+  }
+
+  .article__content__img li {
+    margin: 0 auto;
+  }
+
+  .article__content__img li:nth-child(3n+1) {
+    margin-top: 80px;
+  }
+
+  .article__content__img li:first-child {
+    margin-top: 0;
+  }
+
+  .article__content__email {
+    display: block;
+    margin-top: 80px;
+  }
+
+  .article__content__text {
+    width: 100%;
+  }
+
+  .email-btn {
+    margin: 40px 0 0;
+  }
+
+  .ourSkills__content__img {
+    display: block;
+  }
+
+  .ourSkills__content__box {
+    margin: 88px 0 0;
+  }
+
+  .ourSkills__content__box:first-child {
+    margin-top: 0;
+  }
+
+}
 
 /* スマフォ */
 @media screen and (max-width:767px) {
   .contact-btn {
     display: none;
-  }
-
-  .inner {
-    width: 97%;
-    margin: 0 auto;
   }
 
   .header {
@@ -272,6 +342,7 @@ img {
   }
 
   .hamburger {
+    display: block;
     position: relative;
     cursor: pointer;
     right: 10px;
@@ -322,56 +393,8 @@ img {
     padding-bottom: 25px;
   }
 
-  .section__content-img {
-    float: none;
-    margin-right: 50px;
-  }
-
   .section__content-text {
-    width: 100%;
     margin-top: 20px;
-  }
-
-  .article__content__img {
-    margin: 40px auto 0;
-    display: table;
-  }
-
-  .article__content__img li {
-    margin: 0 auto;
-  }
-
-  .article__content__img li:nth-child(3n+1) {
-    margin: 0 auto;
-  }
-
-  .article__content__img li:nth-child(4) {
-    margin-top: 80px;
-  }
-
-  .article__content__email {
-    display: block;
-    margin-top: 80px;
-  }
-
-  .article__content__text {
-    width: 100%;
-  }
-
-  .email-btn {
-    margin: 40px 0 0;
-  }
-
-  .ourSkills__content__img {
-    display: block;
-  }
-
-  .ourSkills__content__box {
-    margin: 88px 0 0 0;
-  }
-
-  .ourSkills__content__box:first-child {
-    margin-top: 0;
   }
 
   .sns {
@@ -383,82 +406,18 @@ img {
     flex-direction: column;
   }
 
+  .sns__content li {
+    width: 100%;
+  }
+
+  .sns__content li a {
+    width: 100%;
+    text-align: center;
+  }
+
   .sns__content__icon {
-    padding: 30px 40px;
+    width: 95%;
   }
 }
 
-/* タブレット */
 
-@media screen and (min-width:768px) and (max-width:1199px) {
-  
-  .inner {
-    width: 97%;
-    margin: 0 auto;
-  }
-
-  .header {
-    width: 100%;
-    display: inline-block;
-    justify-content: space-around;
-    box-sizing: border-box;
-  }
-
-  .section {
-    padding-bottom: 25px;
-  }
-
-  .section__content-img {
-    float: none;
-    margin: 0 auto;
-  }
-
-  .section__content-text {
-    width: 100%;
-    margin-top: 20px;
-  }
-
-  .article__content__img {
-    margin: 40px auto 0;
-    display: table;
-  }
-
-  .article__content__img li {
-    margin: 0 auto;
-  }
-
-  .article__content__img li:nth-child(3n+1) {
-    margin: 0 auto;
-  }
-
-  .article__content__img li:nth-child(4) {
-    margin-top: 80px;
-  }
-
-  .article__content__email {
-    display: block;
-    margin-top: 80px;
-  }
-
-  .article__content__text {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .email-btn {
-    margin: 40px 0 0;
-  }
-
-  .ourSkills__content__img {
-    display: block;
-  }
-
-  .ourSkills__content__box {
-    margin: 88px 0 0;
-  }
-
-  .ourSkills__content__box:first-child {
-    margin-top: 0;
-  }
-
-}
