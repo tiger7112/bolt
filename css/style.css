@@ -260,6 +260,10 @@ img {
     width: 97%;
     margin: 0 auto;
   }
+
+  .header {
+    padding: 31px 0;
+  }
     
   .header__icon {
     margin: 0 15px;
@@ -270,12 +274,12 @@ img {
   .hamburger {
     position: relative;
     cursor: pointer;
-    margin: 25px 340px;
     right: 50px;
     height: 45px;
     width: 60px;
     border: 1px solid #ddd;
     border-radius: 4px;
+    float: right;
   }
 
   .icon span {
@@ -313,11 +317,6 @@ img {
   .theme__content__title {
     font-size: 80px;
   }
-
-  .theme__content__sub_title {
-    font-size: 30px;
-    margin-top: 20px;
-  }
  
   .section {
     padding-bottom: 25px;
@@ -325,32 +324,29 @@ img {
 
   .section__content-img {
     float: none;
-    margin: 0 auto;
+    margin-right: 50px;
   }
 
   .section__content-text {
+    width: 100%;
     margin-top: 20px;
   }
 
-  .section-text {
-    margin-left: -17%;
-    margin-right: -19%;
-  }
-
   .article__content__img {
-    margin: 40px 0 0 9%;
+    margin: 40px auto 0;
+    display: table;
   }
 
   .article__content__img li {
     margin: 0 auto;
   }
 
-  .article__content__img li:nth-child(4) {
-    padding-top: 80px;
-  }
-
   .article__content__img li:nth-child(3n+1) {
     margin: 0 auto;
+  }
+
+  .article__content__img li:nth-child(4) {
+    margin-top: 80px;
   }
 
   .article__content__email {
@@ -359,12 +355,11 @@ img {
   }
 
   .article__content__text {
-    width: 270px;
-    margin: 0 auto;
+    width: 100%;
   }
 
   .email-btn {
-    margin: 40px 0 0 0;
+    margin: 40px 0 0;
   }
 
   .ourSkills__content__img {
@@ -392,8 +387,6 @@ img {
 /* タブレット */
 
 @media screen and (min-width:768px) and (max-width:1199px) {
-
- /* （不明点）文章をお手本の長さに合わせていくと、headerと一緒に飛び出してしまう */
   
   .inner {
     width: 97%;
@@ -419,23 +412,23 @@ img {
   .section__content-text {
     width: 100%;
     margin-top: 20px;
-    box-sizing: border-box;
   }
 
   .article__content__img {
-    margin: 40px 30% 0 30%;
+    margin: 40px auto 0;
+    display: table;
   }
 
   .article__content__img li {
     margin: 0 auto;
   }
 
-  .article__content__img li:nth-child(4) {
-    padding-top: 80px;
-  }
-
   .article__content__img li:nth-child(3n+1) {
     margin: 0 auto;
+  }
+
+  .article__content__img li:nth-child(4) {
+    margin-top: 80px;
   }
 
   .article__content__email {
@@ -449,7 +442,7 @@ img {
   }
 
   .email-btn {
-    margin: 40px 0 0 0;
+    margin: 40px 0 0;
   }
 
   .ourSkills__content__img {
@@ -457,7 +450,7 @@ img {
   }
 
   .ourSkills__content__box {
-    margin: 88px 0 0 0;
+    margin: 88px 0 0;
   }
 
   .ourSkills__content__box:first-child {
